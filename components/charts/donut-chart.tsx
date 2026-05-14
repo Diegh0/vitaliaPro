@@ -21,7 +21,7 @@ export function DonutChart({ data, height = 180, innerRadius = 55, outerRadius =
           </Pie>
           <Tooltip
             contentStyle={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "12px", fontSize: 12 }}
-            formatter={(v: number) => [`${v}%`, ""]}
+            formatter={(v) => [`${v}%`, ""]}
           />
         </PieChart>
       </ResponsiveContainer>

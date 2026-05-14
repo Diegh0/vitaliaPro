@@ -21,7 +21,7 @@ export function SimpleLineChart({ data, dataKey, secondaryKey, height = 200, col
         <YAxis tick={{ fontSize: 11, fill: "#94a3b8" }} axisLine={false} tickLine={false} tickFormatter={valueFormatter} />
         <Tooltip
           contentStyle={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "12px", fontSize: 12 }}
-          formatter={(v: number) => [valueFormatter ? valueFormatter(v) : v]}
+          formatter={(v) => [valueFormatter && typeof v === "number" ? valueFormatter(v) : v]}
         />
         <Line type="monotone" dataKey={dataKey} stroke={color} strokeWidth={2.5} dot={false} />
         {secondaryKey && <Line type="monotone" dataKey={secondaryKey} stroke={secondaryColor} strokeWidth={2} dot={false} strokeDasharray="4 4" />}
