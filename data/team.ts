@@ -1,0 +1,48 @@
+import { TeamMember } from "@/types";
+
+export const teamMembers: TeamMember[] = [
+  {
+    id: "t1",
+    name: "Dr. Carlos Ruiz",
+    role: "Senior Physiotherapist",
+    specialty: "Sports Medicine & Manual Therapy",
+    email: "carlos.ruiz@vitaliapro.com",
+    phone: "+34 600 111 222",
+    activePatients: 48,
+    rating: 4.9,
+    joinedDate: "2022-03-01",
+  },
+  {
+    id: "t2",
+    name: "Dra. Ana Torres",
+    role: "Physiotherapist",
+    specialty: "Women's Health & Sports Performance",
+    email: "ana.torres@vitaliapro.com",
+    phone: "+34 600 333 444",
+    activePatients: 42,
+    rating: 4.8,
+    joinedDate: "2023-01-15",
+  },
+  {
+    id: "t3",
+    name: "Dr. José María López",
+    role: "Senior Physiotherapist",
+    specialty: "Chronic Pain & Aquatic Therapy",
+    email: "josemaria.lopez@vitaliapro.com",
+    phone: "+34 600 555 666",
+    activePatients: 38,
+    rating: 4.7,
+    joinedDate: "2021-09-01",
+  },
+  {
+    id: "t4",
+    name: "Marta Sánchez",
+    role: "Receptionist",
+    specialty: "Administration & Patient Coordination",
+    email: "marta.sanchez@vitaliapro.com",
+    phone: "+34 600 777 888",
+    activePatients: 0,
+    rating: 4.9,
+    joinedDate: "2023-06-01",
+  },
+];
