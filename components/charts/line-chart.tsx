@@ -2,7 +2,7 @@
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
 
 interface SimpleLineChartProps {
-  data: Array<{ [key: string]: string | number }>;
+  data: Array<Record<string, string | number | undefined>>;
   dataKey: string;
   secondaryKey?: string;
   height?: number;

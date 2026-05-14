@@ -91,6 +91,7 @@ export interface ChartDataPoint {
   value: number;
   secondary?: number;
   tertiary?: number;
+  [key: string]: string | number | undefined;
 }
 
 export interface SessionHistoryEntry {
